@@ -1,17 +1,40 @@
 import React from 'react'
-import Navbar from './components/Navbar';
-import Animation from './components/Animation';
-import './index.css'
+import Home from './routes/Home';
+import About from './routes/About';
+import Contact from './routes/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Services from './routes/Services';
 
+// const download = (url)=>{
+//   const filename = url.split('/').pop();
+//   const atag = document.createElement("a");
+//   atag.href = url;
+//   atag.setAttribute('download',filename);
+//   document.body.appendChild(atag);
+//   atag.click();
+//   atag.remove();
+//  }
+//  return (
+//    <div>
+//      <button >
+//        download
+//      </button>
+//    </div>
+//  )
 
-function App() {
+const pdf_url = 'http://localhost:3000/pdf.pdf';
+
+const App = () => {
   return (
-    <div>
-    <Navbar/>
-    <Animation/>
-    </div>
-    
-   
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+        
+      </Routes>
+    </Router>
   );
 }
 
