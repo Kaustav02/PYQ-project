@@ -19,7 +19,7 @@ const Card = () => {
             subjects, including Physics, Chemistry, and Mathematics, for both
             JEE Mains and JEE Advanced. You can easily find and download the
             papers you need, sorted by year and subject, helping you prepare for
-            your exams effectively. Apart from access to previous years'
+            your exams effectively. Apart from access to previous years
             question papers, we also offer additional resources, including blog
             articles and discussion forums. These resources are designed to
             provide valuable insights and guidance on how to approach your exam

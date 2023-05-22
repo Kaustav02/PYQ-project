@@ -1,0 +1,16 @@
+.social_1 {
+    display: block;
+    
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  
+    border-radius: 20px;
+    transition: transform 0.2s;
+  }
+
+  .social_1:hover {
+    transform: scale(
+      1.2
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

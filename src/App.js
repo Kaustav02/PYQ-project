@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './routes/Home';
-import About from './routes/About';
+
 import Contact from './routes/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Services from './routes/Services';
@@ -29,7 +29,6 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         

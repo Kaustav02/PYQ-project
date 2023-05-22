@@ -1,26 +1,19 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Years from '../components/Years'
+import Advance from './Advance'
 
 const Services = () => {
-      
-  const kaustav = {
-    name: 'Kaustav Mondal',
-    email: 'kaustav.mondal2003@gmail.com'
-  }
-
-  //
-
-  const ankit = {
-    name: 'Ankit Patnaik',
-    email: 'xxxxxxxx.xxxxx@gmail.com'
-  }
 
   return (
     
   
     <div>
-      <h1>
-        Services
-      </h1>
+      
+      <Navbar />
+       <Years/>
+       <Advance/>
+      
     </div>
   )
 }
